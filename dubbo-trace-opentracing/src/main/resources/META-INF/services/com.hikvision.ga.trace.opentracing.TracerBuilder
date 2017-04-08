@@ -1,0 +1,1 @@
+zipkin=com.hikvision.ga.trace.opentracing.zipkin.ZipkinTraceBuilder
