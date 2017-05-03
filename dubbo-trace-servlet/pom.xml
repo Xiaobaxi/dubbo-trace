@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>io.github.xiaobaxi</groupId>
+		<artifactId>dubbo-trace</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>dubbo-trace-servlet</artifactId>
+	<name>dubbo-trace-servlet</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>io.github.xiaobaxi</groupId>
+			<artifactId>dubbo-trace-core</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.xiaobaxi</groupId>
+			<artifactId>dubbo-trace-simple</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.25</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>
