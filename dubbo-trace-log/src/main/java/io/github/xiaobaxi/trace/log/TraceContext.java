@@ -1,4 +1,4 @@
-package com.hikvision.ga.trace.log;
+package io.github.xiaobaxi.trace.log;
 
 /**
  * 

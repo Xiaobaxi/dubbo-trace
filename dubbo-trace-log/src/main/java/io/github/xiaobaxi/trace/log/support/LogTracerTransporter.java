@@ -1,7 +1,7 @@
-package com.hikvision.ga.trace.log.support;
+package io.github.xiaobaxi.trace.log.support;
 
-import com.hikvision.ga.trace.core.TracerClient;
-import com.hikvision.ga.trace.core.TracerTransporter;
+import io.github.xiaobaxi.trace.core.TracerClient;
+import io.github.xiaobaxi.trace.core.TracerTransporter;
 
 /**
  * 

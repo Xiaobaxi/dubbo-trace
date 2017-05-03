@@ -1,4 +1,4 @@
-package com.hikvision.ga.trace.simple.support;
+package io.github.xiaobaxi.trace.simple.support;
 
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -12,12 +12,12 @@ import com.alibaba.dubbo.rpc.RpcException;
 import com.google.common.base.Stopwatch;
 import com.google.common.base.Strings;
 import com.google.common.base.Throwables;
-import com.hikvision.ga.trace.core.TracerClient;
-import com.hikvision.ga.trace.core.TracerConstants;
-import com.hikvision.ga.trace.simple.Ids;
-import com.hikvision.ga.trace.simple.Networks;
-import com.hikvision.ga.trace.simple.TraceAgent;
-import com.hikvision.ga.trace.simple.TracerContext;
+import io.github.xiaobaxi.trace.core.TracerClient;
+import io.github.xiaobaxi.trace.core.TracerConstants;
+import io.github.xiaobaxi.trace.simple.Ids;
+import io.github.xiaobaxi.trace.simple.Networks;
+import io.github.xiaobaxi.trace.simple.TraceAgent;
+import io.github.xiaobaxi.trace.simple.TracerContext;
 import com.twitter.zipkin.gen.Annotation;
 import com.twitter.zipkin.gen.BinaryAnnotation;
 import com.twitter.zipkin.gen.Endpoint;

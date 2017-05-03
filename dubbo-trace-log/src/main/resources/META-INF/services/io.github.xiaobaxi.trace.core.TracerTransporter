@@ -1,1 +1,1 @@
-log=com.hikvision.ga.trace.log.support.LogTracerTransporter
+log=io.github.xiaobaxi.trace.log.support.LogTracerTransporter

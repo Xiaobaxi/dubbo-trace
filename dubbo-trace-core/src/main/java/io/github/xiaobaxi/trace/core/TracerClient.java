@@ -1,4 +1,4 @@
-package com.hikvision.ga.trace.core;
+package io.github.xiaobaxi.trace.core;
 
 import com.alibaba.dubbo.rpc.Invocation;
 import com.alibaba.dubbo.rpc.Invoker;

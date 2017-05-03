@@ -1,1 +1,1 @@
-zipkin=com.hikvision.ga.trace.opentracing.zipkin.ZipkinTraceBuilder
+zipkin=io.github.xiaobaxi.trace.opentracing.zipkin.ZipkinTraceBuilder

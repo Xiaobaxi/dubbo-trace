@@ -1,4 +1,4 @@
-package com.hikvision.ga.trace.simple;
+package io.github.xiaobaxi.trace.simple;
 
 import java.lang.management.ManagementFactory;
 

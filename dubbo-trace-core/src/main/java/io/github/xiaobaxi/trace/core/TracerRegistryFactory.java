@@ -1,4 +1,4 @@
-package com.hikvision.ga.trace.core;
+package io.github.xiaobaxi.trace.core;
 
 import com.alibaba.dubbo.common.extension.ExtensionLoader;
 import com.alibaba.dubbo.common.utils.ConfigUtils;

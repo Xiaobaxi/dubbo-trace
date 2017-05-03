@@ -1,4 +1,4 @@
-package com.hikvision.ga.trace.log.support;
+package io.github.xiaobaxi.trace.log.support;
 
 import java.util.UUID;
 
@@ -10,11 +10,11 @@ import com.alibaba.dubbo.rpc.Invoker;
 import com.alibaba.dubbo.rpc.Result;
 import com.alibaba.dubbo.rpc.RpcContext;
 import com.alibaba.dubbo.rpc.RpcException;
-import com.hikvision.ga.trace.core.TracerClient;
-import com.hikvision.ga.trace.core.TracerConstants;
-import com.hikvision.ga.trace.log.TraceContext;
-import com.hikvision.ga.trace.log.TraceInfoUtils;
-import com.hikvision.ga.trace.log.TraceTuple;
+import io.github.xiaobaxi.trace.core.TracerClient;
+import io.github.xiaobaxi.trace.core.TracerConstants;
+import io.github.xiaobaxi.trace.log.TraceContext;
+import io.github.xiaobaxi.trace.log.TraceInfoUtils;
+import io.github.xiaobaxi.trace.log.TraceTuple;
 
 /**
  * 

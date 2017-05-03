@@ -1,4 +1,4 @@
-package com.hikvision.ga.trace.simple;
+package io.github.xiaobaxi.trace.simple;
 
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;

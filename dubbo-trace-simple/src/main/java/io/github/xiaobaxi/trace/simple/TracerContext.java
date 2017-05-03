@@ -1,4 +1,4 @@
-package com.hikvision.ga.trace.simple;
+package io.github.xiaobaxi.trace.simple;
 
 import com.twitter.zipkin.gen.Span;
 import java.util.ArrayList;

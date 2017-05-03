@@ -1,2 +1,2 @@
-providerFilter=com.hikvision.ga.trace.core.TracerProviderFilter
-consumerFilter=com.hikvision.ga.trace.core.TracerConsumerFilter
+providerFilter=io.github.xiaobaxi.trace.core.TracerProviderFilter
+consumerFilter=io.github.xiaobaxi.trace.core.TracerConsumerFilter

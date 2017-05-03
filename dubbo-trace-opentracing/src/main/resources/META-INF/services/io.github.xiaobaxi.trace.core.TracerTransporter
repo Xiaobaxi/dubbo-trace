@@ -1,1 +1,1 @@
-ot=com.hikvision.ga.trace.opentracing.support.OpenTracingTracerTransporter
+ot=io.github.xiaobaxi.trace.opentracing.support.OpenTracingTracerTransporter

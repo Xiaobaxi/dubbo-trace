@@ -1,4 +1,4 @@
-package com.hikvision.ga.trace.opentracing;
+package io.github.xiaobaxi.trace.opentracing;
 
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -7,7 +7,7 @@ import io.opentracing.Tracer;
 
 import com.alibaba.dubbo.common.extension.ExtensionLoader;
 import com.alibaba.dubbo.rpc.RpcContext;
-import com.hikvision.ga.trace.core.TracerConstants;
+import io.github.xiaobaxi.trace.core.TracerConstants;
 
 /**
  * OpenTracingContext hold the span and tracer

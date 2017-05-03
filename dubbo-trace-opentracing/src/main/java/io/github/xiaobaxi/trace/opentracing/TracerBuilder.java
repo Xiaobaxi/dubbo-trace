@@ -1,4 +1,4 @@
-package com.hikvision.ga.trace.opentracing;
+package io.github.xiaobaxi.trace.opentracing;
 
 import com.alibaba.dubbo.common.extension.SPI;
 

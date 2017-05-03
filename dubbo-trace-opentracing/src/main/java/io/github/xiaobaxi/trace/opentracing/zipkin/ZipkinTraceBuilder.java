@@ -1,4 +1,4 @@
-package com.hikvision.ga.trace.opentracing.zipkin;
+package io.github.xiaobaxi.trace.opentracing.zipkin;
 
 import io.opentracing.Tracer;
 import io.opentracing.impl.BraveTracer;
@@ -7,8 +7,8 @@ import com.alibaba.dubbo.common.utils.ConfigUtils;
 import com.github.kristofa.brave.Brave;
 import com.github.kristofa.brave.EmptySpanCollectorMetricsHandler;
 import com.github.kristofa.brave.http.HttpSpanCollector;
-import com.hikvision.ga.trace.core.TracerConstants;
-import com.hikvision.ga.trace.opentracing.TracerBuilder;
+import io.github.xiaobaxi.trace.core.TracerConstants;
+import io.github.xiaobaxi.trace.opentracing.TracerBuilder;
 
 /**
  * zipkin tracer builder

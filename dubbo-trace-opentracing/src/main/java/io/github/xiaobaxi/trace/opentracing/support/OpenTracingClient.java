@@ -1,4 +1,4 @@
-package com.hikvision.ga.trace.opentracing.support;
+package io.github.xiaobaxi.trace.opentracing.support;
 
 import java.util.Iterator;
 import java.util.Map.Entry;
@@ -18,8 +18,8 @@ import com.alibaba.dubbo.rpc.Invocation;
 import com.alibaba.dubbo.rpc.Invoker;
 import com.alibaba.dubbo.rpc.Result;
 import com.alibaba.dubbo.rpc.RpcException;
-import com.hikvision.ga.trace.core.TracerClient;
-import com.hikvision.ga.trace.opentracing.OpenTracingContext;
+import io.github.xiaobaxi.trace.core.TracerClient;
+import io.github.xiaobaxi.trace.opentracing.OpenTracingContext;
 
 /**
  * 
