@@ -1,13 +1,13 @@
 package io.github.xiaobaxi.trace.servlet.support;
 
 import com.alibaba.dubbo.common.utils.ConfigUtils;
+import com.alibaba.dubbo.common.utils.NetUtils;
 import com.google.common.base.Stopwatch;
 import com.twitter.zipkin.gen.Annotation;
 import com.twitter.zipkin.gen.Endpoint;
 import com.twitter.zipkin.gen.Span;
 import io.github.xiaobaxi.trace.core.TracerConstants;
-import io.github.xiaobaxi.trace.simple.Ids;
-import io.github.xiaobaxi.trace.simple.ServerInfo;
+import io.github.xiaobaxi.trace.core.utils.SimpleUtils;
 import io.github.xiaobaxi.trace.simple.TraceAgent;
 import io.github.xiaobaxi.trace.simple.TracerContext;
 import org.slf4j.Logger;
@@ -45,7 +45,7 @@ public class TracerServletFilter implements Filter {
 		String uri = req.getRequestURI();
 		Span rootSpan = new Span();
 
-		long id = Ids.get();
+		long id = SimpleUtils.getInstance().getId();
 		rootSpan.setId(id);
 		rootSpan.setTrace_id(id);
 		rootSpan.setName(uri);
@@ -55,7 +55,7 @@ public class TracerServletFilter implements Filter {
 		// sr annotation
 		rootSpan.addToAnnotations(
 				Annotation.create(timestamp, TracerConstants.ANNO_SR,
-						Endpoint.create(uri, ServerInfo.IP4, req.getLocalPort())));
+						Endpoint.create(uri, SimpleUtils.getInstance().ip2Num(NetUtils.getLocalHost()), req.getLocalPort())));
 
 		// prepare trace context
 		TracerContext.start();
@@ -69,7 +69,7 @@ public class TracerServletFilter implements Filter {
 		// ss annotation
 		rootSpan.addToAnnotations(
 				Annotation.create(System.currentTimeMillis(), TracerConstants.ANNO_SS,
-						Endpoint.create(rootSpan.getName(), ServerInfo.IP4, req.getLocalPort())));
+						Endpoint.create(rootSpan.getName(), SimpleUtils.getInstance().ip2Num(NetUtils.getLocalHost()), req.getLocalPort())));
 
 		rootSpan.setDuration(watch.stop().elapsed(TimeUnit.MICROSECONDS));
 

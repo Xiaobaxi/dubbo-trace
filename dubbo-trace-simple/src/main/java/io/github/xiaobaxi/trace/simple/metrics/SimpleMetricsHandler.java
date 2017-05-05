@@ -1,4 +1,4 @@
-package io.github.xiaobaxi.trace.simple;
+package io.github.xiaobaxi.trace.simple.metrics;
 
 import com.github.kristofa.brave.SpanCollectorMetricsHandler;
 

@@ -4,6 +4,7 @@ import com.github.kristofa.brave.AbstractSpanCollector;
 import com.github.kristofa.brave.SpanCollectorMetricsHandler;
 import com.github.kristofa.brave.http.HttpSpanCollector;
 import com.twitter.zipkin.gen.Span;
+import io.github.xiaobaxi.trace.simple.metrics.SimpleMetricsHandler;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;

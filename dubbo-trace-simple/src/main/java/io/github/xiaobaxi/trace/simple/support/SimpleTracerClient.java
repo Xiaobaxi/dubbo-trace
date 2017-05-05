@@ -14,8 +14,7 @@ import com.google.common.base.Strings;
 import com.google.common.base.Throwables;
 import io.github.xiaobaxi.trace.core.TracerClient;
 import io.github.xiaobaxi.trace.core.TracerConstants;
-import io.github.xiaobaxi.trace.simple.Ids;
-import io.github.xiaobaxi.trace.simple.Networks;
+import io.github.xiaobaxi.trace.core.utils.SimpleUtils;
 import io.github.xiaobaxi.trace.simple.TraceAgent;
 import io.github.xiaobaxi.trace.simple.TracerContext;
 import com.twitter.zipkin.gen.Annotation;
@@ -51,7 +50,7 @@ public class SimpleTracerClient implements TracerClient {
 	        }
 	        Stopwatch watch = Stopwatch.createStarted();
 	        Span consumeSpan = new Span();
-			consumeSpan.setId(Ids.get());
+			consumeSpan.setId(SimpleUtils.getInstance().getId());
 			Long traceId = TracerContext.getTraceId();
 			Long parentId = TracerContext.getSpanId();
 			consumeSpan.setTrace_id(traceId);
@@ -63,7 +62,7 @@ public class SimpleTracerClient implements TracerClient {
 
 			// cs annotation
 			URL provider = invoker.getUrl();
-			int providerHost = Networks.ip2Num(provider.getHost());
+			int providerHost = SimpleUtils.getInstance().ip2Num(provider.getHost());
 			int providerPort = provider.getPort();
 			consumeSpan.addToAnnotations(Annotation.create(timestamp, TracerConstants.ANNO_CS,
 					Endpoint.create(serviceName, providerHost, providerPort)));
@@ -82,7 +81,7 @@ public class SimpleTracerClient implements TracerClient {
 			// cr annotation
 			URL url = invoker.getUrl();
 			consumeSpan.addToAnnotations(Annotation.create(System.currentTimeMillis(), TracerConstants.ANNO_CR,
-					Endpoint.create(consumeSpan.getName(), Networks.ip2Num(url.getHost()), url.getPort())));
+					Endpoint.create(consumeSpan.getName(), SimpleUtils.getInstance().ip2Num(url.getHost()), url.getPort())));
 
 			Throwable throwable = result.getException();
 			if (throwable != null) {
