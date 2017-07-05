@@ -1,2 +1,0 @@
-providerFilter=io.github.xiaobaxi.trace.core.TracerProviderFilter
-consumerFilter=io.github.xiaobaxi.trace.core.TracerConsumerFilter

@@ -1,1 +1,0 @@
-zipkin=io.github.xiaobaxi.trace.opentracing.zipkin.ZipkinTraceBuilder

@@ -32,11 +32,7 @@
 	</properties>
 	
 	<modules>
-		<module>dubbo-trace-core</module>
-		<module>dubbo-trace-log</module>
-		<module>dubbo-trace-simple</module>
 		<module>dubbo-trace-opentracing</module>
-		<module>dubbo-trace-servlet</module>
 	</modules>
 
 	<build>
